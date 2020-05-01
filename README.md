@@ -1,15 +1,11 @@
 # Flutter Lessons
 
-## Lesson 1 : Our first application and the MaterialApp widget
+## Lesson 3 : Exercises about Stateful Widgets
 
-In this lesson we are going to speak about:
-* runApp method
-* StatelessWidget
-* Container
-* MaterialApp
-* InheritedWidget
-* Theme
+These exercises are here to have a better understanding on Stateful Widgets and state handling.
 
 ## Expected result
 
-<img src="https://raw.githubusercontent.com/ThomasEcalle/flutter_lessons/1-material-app/readme_resources/solution.png" width="140" height="280" hspace="20"/>
+<img src="https://raw.githubusercontent.com/ThomasEcalle/flutter_lessons/3-stateful-exercices/readme_resources/one.gif" width="120" height="260" hspace="20"/>
+<img src="https://raw.githubusercontent.com/ThomasEcalle/flutter_lessons/3-stateful-exercices/readme_resources/two.gif" width="120" height="260" hspace="20"/>
+<img src="https://raw.githubusercontent.com/ThomasEcalle/flutter_lessons/3-stateful-exercices/readme_resources/three.gif" width="120" height="260" hspace="20"/>
