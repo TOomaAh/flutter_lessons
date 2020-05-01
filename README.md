@@ -6,6 +6,4 @@ These exercises are here to have a better understanding on Stateful Widgets and 
 
 ## Expected result
 
-<img src="https://raw.githubusercontent.com/ThomasEcalle/flutter_lessons/3-stateful-exercices/readme_resources/one.gif" width="120" height="260" hspace="20"/>
-<img src="https://raw.githubusercontent.com/ThomasEcalle/flutter_lessons/3-stateful-exercices/readme_resources/two.gif" width="120" height="260" hspace="20"/>
-<img src="https://raw.githubusercontent.com/ThomasEcalle/flutter_lessons/3-stateful-exercices/readme_resources/three.gif" width="120" height="260" hspace="20"/>
+<img src="https://raw.githubusercontent.com/ThomasEcalle/flutter_lessons/3.1-stateful-exercises/readme_resources/one.gif" width="120" height="260" hspace="20"/> <img src="https://raw.githubusercontent.com/ThomasEcalle/flutter_lessons/3.1-stateful-exercises/readme_resources/two.gif" width="120" height="260" hspace="20"/> <img src="https://raw.githubusercontent.com/ThomasEcalle/flutter_lessons/3.1-stateful-exercises/readme_resources/three.gif" width="120" height="260" hspace="20"/>
