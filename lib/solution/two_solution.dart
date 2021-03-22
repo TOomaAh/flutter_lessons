@@ -45,8 +45,8 @@ class MagicSquare extends StatelessWidget {
   final Color color;
 
   const MagicSquare({
-    Key key,
-    this.color,
+    Key? key,
+    required this.color,
   }) : super(key: key);
 
   @override

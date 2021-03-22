@@ -42,8 +42,8 @@ class MagicSquare extends StatelessWidget {
   final VoidCallback onTap;
 
   const MagicSquare({
-    Key key,
-    this.onTap,
+    Key?key,
+    required this.onTap,
   }) : super(key: key);
 
   @override
