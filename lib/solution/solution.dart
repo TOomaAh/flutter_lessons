@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
         textTheme: TextTheme(
-          title: TextStyle(
+          headline1: TextStyle(
             color: Colors.amber,
             fontSize: 22,
             fontWeight: FontWeight.bold,
@@ -28,7 +28,7 @@ class Home extends StatelessWidget {
       body: Center(
         child: Text(
           "Hello",
-          style: Theme.of(context).textTheme.title,
+          style: Theme.of(context).textTheme.headline1,
         ),
       ),
       appBar: AppBar(
@@ -45,11 +45,11 @@ class Home extends StatelessWidget {
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.favorite),
-            title: Text("Favorites"),
+            label: "Favorites",
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.calendar_today),
-            title: Text("today"),
+            label: "Today",
           ),
         ],
       ),
