@@ -9,7 +9,7 @@ class ScreenA extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text("Screen A"),
-            RaisedButton(
+            ElevatedButton(
               child: Text("Go back"),
               onPressed: () {
                 Navigator.of(context).pop();

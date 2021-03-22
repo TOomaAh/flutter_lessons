@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
         textTheme: TextTheme(
-          title: TextStyle(
+          headline1: TextStyle(
             color: Colors.amber,
             fontSize: 22,
             fontWeight: FontWeight.bold,

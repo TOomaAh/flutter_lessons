@@ -6,8 +6,8 @@ class ScreenC extends StatelessWidget {
   final int identifier;
 
   const ScreenC({
-    Key key,
-    this.identifier,
+    Key? key,
+    required this.identifier,
   }) : super(key: key);
 
   @override
@@ -18,8 +18,8 @@ class ScreenC extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text("Screen C"),
-            Text("Identifier = ${identifier ?? 'undefined'}"),
-            RaisedButton(
+            Text("Identifier = $identifier"),
+            ElevatedButton(
               child: Text("Go back"),
               onPressed: () {
                 Navigator.of(context).pop();

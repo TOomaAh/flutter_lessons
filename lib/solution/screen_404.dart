@@ -9,7 +9,7 @@ class Screen404 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text("404"),
-            RaisedButton(
+            ElevatedButton(
               child: Text("Go back"),
               onPressed: () {
                 Navigator.of(context).pop();

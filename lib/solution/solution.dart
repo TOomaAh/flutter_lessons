@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
         textTheme: TextTheme(
-          title: TextStyle(
+          headline1: TextStyle(
             color: Colors.amber,
             fontSize: 22,
             fontWeight: FontWeight.bold,
@@ -28,13 +28,13 @@ class MyApp extends StatelessWidget {
         final dynamic arguments = settings.arguments;
         switch (settings.name) {
           case ScreenC.routeName:
-            int identifier;
+            int? identifier;
             if (arguments is int) {
               identifier = arguments;
             }
             return MaterialPageRoute(
               builder: (BuildContext context) => ScreenC(
-                identifier: identifier,
+                identifier: identifier ?? 0,
               ),
             );
             break;
