@@ -5,8 +5,8 @@ class UserItem extends StatelessWidget {
   final User user;
 
   const UserItem({
-    Key key,
-    this.user,
+    Key? key,
+    required this.user,
   }) : super(key: key);
 
   @override

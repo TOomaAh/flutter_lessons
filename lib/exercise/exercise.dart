@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
         textTheme: TextTheme(
-          title: TextStyle(
+          headline1: TextStyle(
             color: Colors.amber,
             fontSize: 22,
             fontWeight: FontWeight.bold,
@@ -38,7 +38,9 @@ class Home extends StatelessWidget {
         child: ListView.builder(
           itemCount: _users.length,
           itemBuilder: (BuildContext context, int index) {
-            return UserItem(user: _users[index],);
+            return UserItem(
+              user: _users[index],
+            );
           },
         ),
       ),
