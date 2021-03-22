@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -21,6 +22,8 @@ class MyApp extends StatelessWidget {
 }
 
 class Home extends StatelessWidget {
+  final List<Widget> bullets = List.generate(30, (_) => Bullet());
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -37,6 +40,15 @@ class Home extends StatelessWidget {
               Expanded(
                 child: Container(
                   color: Colors.orange,
+                  width: MediaQuery.of(context).size.width,
+                  child: Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: Wrap(
+                      spacing: 5,
+                      runSpacing: 5,
+                      children: bullets,
+                    ),
+                  ),
                 ),
               ),
             ],
@@ -50,6 +62,21 @@ class Home extends StatelessWidget {
                   Expanded(
                     child: Container(
                       color: Colors.amber,
+                      width: double.infinity,
+                      height: double.infinity,
+                      child: Padding(
+                        padding: EdgeInsets.all(8),
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Bullet(),
+                            SizedBox(width: 5,),
+                            Bullet(),
+                            Spacer(),
+                            Bullet(),
+                          ],
+                        ),
+                      ),
                     ),
                   ),
                   Expanded(
@@ -72,6 +99,20 @@ class Home extends StatelessWidget {
           ),
         ),
       ],
+    );
+  }
+}
+
+class Bullet extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 20,
+      width: 20,
+      decoration: BoxDecoration(
+        color: Colors.red,
+        shape: BoxShape.circle,
+      ),
     );
   }
 }

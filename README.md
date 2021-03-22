@@ -5,9 +5,12 @@
 In this lesson we are going to speak about:
 * Row
 * Column
+* Wrap
 * Stack
 * Expanded
 * MediaQuery
+* Padding
+* Spacer
 
 ## Expected result
 
