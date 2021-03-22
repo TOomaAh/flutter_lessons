@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
         textTheme: TextTheme(
-          title: TextStyle(
+          headline1: TextStyle(
             color: Colors.amber,
             fontSize: 22,
             fontWeight: FontWeight.bold,
@@ -33,6 +33,8 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   int _selectedScreenIndex = 0;
 
+  List<Widget> get screens => widget.screens;
+
   void _onTabTapped(int index) {
     setState(() {
       _selectedScreenIndex = index;
@@ -43,7 +45,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: widget.screens[_selectedScreenIndex],
+      body: screens[_selectedScreenIndex],
       appBar: AppBar(
         leading: Icon(Icons.airplanemode_active),
         title: Text("My Title"),
@@ -60,11 +62,11 @@ class _HomeState extends State<Home> {
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.favorite),
-            title: Text("Favorites"),
+            label: "Favorites",
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.calendar_today),
-            title: Text("today"),
+            label: "Today",
           ),
         ],
       ),
