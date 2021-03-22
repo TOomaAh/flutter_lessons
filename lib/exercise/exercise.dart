@@ -4,5 +4,5 @@
 /// * StatelessWidget
 /// * Container
 /// * MaterialApp
-/// * InheritedWidget
+/// * InheritedWidget concept
 /// * Theme
